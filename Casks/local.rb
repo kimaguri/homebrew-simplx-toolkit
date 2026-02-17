@@ -15,12 +15,12 @@ cask "local" do
     on_intel do
       url "https://github.com/kimaguri/simplx-toolkit/releases/download/v#{version}/local_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/kimaguri/simplx-toolkit"
-      sha256 "256d96b6f86e792e08403a677d21a59dc5c41ac15f6ec300bfbf14c85ab040aa"
+      sha256 "b60b6b61df2a0dcdd411a6a3188be2e249d405a32c57c420cdd9eec195f52a4a"
     end
     on_arm do
       url "https://github.com/kimaguri/simplx-toolkit/releases/download/v#{version}/local_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/kimaguri/simplx-toolkit"
-      sha256 "d99a9711be286fe915331536f1bbefaa1f13a99f0c123dfacc8fcd2b4fa218b6"
+      sha256 "f01434639548c97df21cbdbaf52a6f8e8b793523c49c603bccdcb8555d1ad8d6"
     end
   end
 
@@ -28,12 +28,12 @@ cask "local" do
     on_intel do
       url "https://github.com/kimaguri/simplx-toolkit/releases/download/v#{version}/local_#{version}_linux_amd64.tar.gz",
         verified: "github.com/kimaguri/simplx-toolkit"
-      sha256 "7a51bc3c4d69ec4d81fae85866dddbfd068185cd1534b92e88e2ad1543b86ce0"
+      sha256 "9fe3e7f775dd681eb14f3f6a1dc7c916f993686d9e53feb3154dd52ab7ad97e1"
     end
     on_arm do
       url "https://github.com/kimaguri/simplx-toolkit/releases/download/v#{version}/local_#{version}_linux_arm64.tar.gz",
         verified: "github.com/kimaguri/simplx-toolkit"
-      sha256 "5b8c59627178a179a65ff71379c7f07c0fd0e27a48bf5b9f0aebe9c7730652ed"
+      sha256 "3fafa59333a8e2e19dd91382865f13e6338717cc87cc837258e06b2329711a74"
     end
   end
 
