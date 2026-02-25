@@ -5,20 +5,20 @@
 class Maomao < Formula
   desc "Multi-repo agent orchestrator — manage AI agents across git repositories"
   homepage "https://github.com/kimaguri/simplx-toolkit"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.5.0/maomao_0.5.0_darwin_amd64.tar.gz"
-      sha256 "5e3deb983155d280f31834507eebc1f9966d0a276644ffd1e9a07ffc3dd7b334"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/maomao_0.6.0_darwin_amd64.tar.gz"
+      sha256 "2b538ba2ee269ddf0b37d8c2a601de25cee7e31405b12e35a0ca7339f486434a"
 
       define_method(:install) do
         bin.install "maomao"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.5.0/maomao_0.5.0_darwin_arm64.tar.gz"
-      sha256 "5be8a29f215d412a8fa03a6b85b27d6067b32baa6ff31e3d14563febc97a1ea9"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/maomao_0.6.0_darwin_arm64.tar.gz"
+      sha256 "e622bec40b838a00373a70fcdacecea51d66988cfeec39345d1f37f2a06d0c83"
 
       define_method(:install) do
         bin.install "maomao"
@@ -28,15 +28,15 @@ class Maomao < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.5.0/maomao_0.5.0_linux_amd64.tar.gz"
-      sha256 "5dbd0de70f4e2e70da2b800037a9787f94601387cdaa996649707e8d2bdb542e"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/maomao_0.6.0_linux_amd64.tar.gz"
+      sha256 "384bd18287ab2486065c350c42e6bbb8933a0cb5c1fe4c436f5811f50fc38acd"
       define_method(:install) do
         bin.install "maomao"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.5.0/maomao_0.5.0_linux_arm64.tar.gz"
-      sha256 "23e34873d7c8cae5fd0482e025aa56ecfec58f33cb93f2cc08aae0c7d4077071"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/maomao_0.6.0_linux_arm64.tar.gz"
+      sha256 "b9fe9d05271b123efe8a11ce3f887e52379cb01e8d09c5fa67ea7e4aaac475f5"
       define_method(:install) do
         bin.install "maomao"
       end
