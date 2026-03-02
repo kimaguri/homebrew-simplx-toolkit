@@ -5,20 +5,20 @@
 class Devdash < Formula
   desc "Dev process dashboard TUI — launch, monitor, and manage local dev services"
   homepage "https://github.com/kimaguri/simplx-toolkit"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/devdash_0.6.0_darwin_amd64.tar.gz"
-      sha256 "ae691edccbafae1042dbf4fe9c57ea356fb71a9e5134c79afa42438a4cea5d2d"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.7.0/devdash_0.7.0_darwin_amd64.tar.gz"
+      sha256 "47c231f2a5e0b3efdb21a2699aaec834ead3e27aa82d0b3054a97eebb1c30548"
 
       define_method(:install) do
         bin.install "devdash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/devdash_0.6.0_darwin_arm64.tar.gz"
-      sha256 "ad3258e9bebf6736faae5041dbf9954a1df1e66f7fc0e8b05936ddcf3c4d9863"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.7.0/devdash_0.7.0_darwin_arm64.tar.gz"
+      sha256 "b308dab6b383ebecbf00582110cf30d1427629e8f92a521422768651c4d85455"
 
       define_method(:install) do
         bin.install "devdash"
@@ -28,15 +28,15 @@ class Devdash < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/devdash_0.6.0_linux_amd64.tar.gz"
-      sha256 "1ecc17dc7403c6abb109ae75672cdfa0f436c4a69bdff4aadf1dabb02d142e98"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.7.0/devdash_0.7.0_linux_amd64.tar.gz"
+      sha256 "7ab3f67ecf3f94a84b30bb0282ba6ef63755417c2dc44d21efee4caacbfbd2e6"
       define_method(:install) do
         bin.install "devdash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.6.0/devdash_0.6.0_linux_arm64.tar.gz"
-      sha256 "78989e00e2c41eb13c2eb94135a733f1bf020858962301de7c9295db29a44ef1"
+      url "https://github.com/kimaguri/simplx-toolkit/releases/download/v0.7.0/devdash_0.7.0_linux_arm64.tar.gz"
+      sha256 "c8527c1ed96c8b042ad4008c62ea918fe268042afae05b70d6f9ac8d927b5d8a"
       define_method(:install) do
         bin.install "devdash"
       end
